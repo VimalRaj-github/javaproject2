@@ -1,0 +1,17 @@
+package src.main.java.com.vimal.Mainclass;
+
+import org.springframework.stereotype.*;
+import org.springframework.beans.factory.annotation.Autowired;
+
+@Component
+public class Hotel_1 {
+	
+	@Autowired
+	public Hotel_2 Zomato;
+	public Hotel_2 Uber;
+
+	public int foodprice=0;
+	public int cofee=0;
+	public int tea=0;
+	
+}
