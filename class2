@@ -1,0 +1,12 @@
+package src.main.java.com.vimal.Mainclass;
+
+import org.springframework.stereotype.*;
+
+@Component
+public class Hotel_2 {
+	
+	public int foodprice=0;
+	public int cofee=0;
+	public int tea=0;
+
+}
