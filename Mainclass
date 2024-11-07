@@ -1,0 +1,53 @@
+package src.main.java.com.vimal.Mainclass;
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+
+
+@SpringBootApplication
+public class MainclassApplication {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context=SpringApplication.run(MainclassApplication.class, args);
+		
+		Hotel_1 swiggy=context.getBean(Hotel_1.class);
+		
+		swiggy.foodprice=40;
+		swiggy.cofee=20;
+		swiggy.tea=15;
+		
+		System.out.println("food's price in Swiggy is "+swiggy.foodprice);
+		System.out.println("Cofee's price in Swiggy is "+swiggy.cofee);
+		System.out.println("Tea's price in Swiggy is "+swiggy.tea);
+		
+		Hotel_1 Zomato=context.getBean(Hotel_1.class);
+
+		Zomato.foodprice=45;
+		Zomato.cofee=18;
+		Zomato.tea=13;
+		
+		System.out.println("Food's price in Zomato is "+Zomato.foodprice);
+		System.out.println("Cofee's price in Zomato is "+Zomato.cofee);
+		System.out.println("Tea's price in Zomato is "+Zomato.tea);
+		
+		Hotel_1 Uber=context.getBean(Hotel_1.class);
+
+		
+		Uber.foodprice=50;
+		Uber.cofee=20;
+		Uber.tea=15;
+		
+		System.out.println("Food's in Uber is "+Uber.foodprice);
+		System.out.println("Cofee's price in Uber is "+Uber.cofee);
+		System.out.println("Tea's in Uber is "+Uber.tea);
+					
+		
+		
+		
+	}
+
+}
